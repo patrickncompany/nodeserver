@@ -15,6 +15,10 @@
             console.log('Go GEO');
             navigator.geolocation.getCurrentPosition(position => {
                 console.log(position);
+                const latitude = position.coords.latitude;
+                const longitude = position.coords.latitude;
+                document.getElementById('lati').textContent = latitude;
+                document.getElementById('long').textContent = longitude;
                 //cosole.log(position.coords.latitude);
                 //console.log(position.coords.longitude);
             });
@@ -27,6 +31,8 @@
     <h1>Hello, World!</h1>
     <p>ExpressJS and NodeJS</p>
     <p>This is an express server running in node.</p>
+    <p>latitude: &deg;<span id="lati"></span></p>
+    <p>longitude: &deg;<span id="long"></span></p>
 </body>
 
 </html>
