@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, World!</title>
+</head>
+
+<body>
+    <script>
+        if ('geolocation' in navigator) {
+            // yes geo
+            console.log('Go GEO');
+            navigator.geolocation.getCurrentPosition(position => {
+                console.log(position);
+                //cosole.log(position.coords.latitude);
+                //console.log(position.coords.longitude);
+            });
+        } else {
+            // no geo
+            console.log('NO GEO');
+        }
+    </script>
+
+    <h1>Hello, World!</h1>
+    <p>ExpressJS and NodeJS</p>
+    <p>This is an express server running in node.</p>
+</body>
+
+</html>

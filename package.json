@@ -1,0 +1,24 @@
+{
+  "name": "nodeserver",
+  "version": "1.0.0",
+  "description": "Working with node selfie app by joey lee",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "nodeserver"
+  },
+  "keywords": [
+    "example",
+    "data",
+    "selfie",
+    "node"
+  ],
+  "author": "KPO",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
