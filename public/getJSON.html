@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getJSON Sample</title>
+</head>
+
+<body>
+    <script>
+    const dataURL = '/getJSON';
+    console.log('Start fetch from ' + dataURL);
+    fetch(dataURL)
+    .then(response => response.json())
+    .then(response => {
+        //console.log(data);
+        console.log('status   : ' + response.status);
+        console.log('message  : ' + response.senddata.message);
+        console.log('resopnse  : ' + response.senddata.resopnse);
+        console.log('zip  : ' + response.senddata.zip);
+        console.log('phone  : ' + response.senddata.phone);
+        console.log('state  : ' + response.senddata.state);
+    });
+
+
+    // const response = await fetch('/api', options);
+    // const json = await response.json();
+    </script>
+
+    <h1>getJSON : </h1>
+    <p>This is a sample using Mozilla API fetch command.</p>
+    <p></p>
+    <p></p>
+    <p></p>
+</body>
+
+</html>
